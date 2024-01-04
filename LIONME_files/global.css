@@ -1,0 +1,168 @@
+@charset "utf-8";
+/**************************************************
+
+	Global.css ( ver 1.0.3 )
+
+**************************************************/
+
+#header{
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    background: #fff;
+    font-family: noto;
+    border-bottom: 1px solid #eee;
+    z-index: 999;
+
+}
+#header-subdiv{
+	margin: 0 20%;
+	position: relative;
+}
+#logo{
+  width: 200px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+  top:20px;
+  
+}  
+.nav{
+	
+	position: absolute;
+	 top:38px;
+	
+	right:0
+}
+.nav li{
+	
+	float:right;
+	margin-left:20px;
+}
+.nav-item a{
+	font-family: noto;
+	font-size: 17px;
+	font-weight: 500;
+    text-align: center;
+	color: #000;
+	
+}
+
+#bannar{
+	background: #eee;
+    height: 900px;
+    position: relative;
+
+	
+	
+}
+
+#sub1 > div{
+	margin: 40px 20%;
+    display: flex;	
+    position: relative;
+    
+}
+
+#sub1 > div div{
+	width:33.3%;
+	position: relative;
+	height: 140px;
+	border-right:solid 1px #dbdbdb;
+		
+}
+
+#sub1 > div div span{
+
+  font-family: noto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.44;
+  text-align: left;
+  color: #000;
+  position: absolute;
+  top: 25px;
+  left: 85px;
+		
+}
+
+#sub1 > div div a{
+
+
+  font-family: noto;
+  font-size: 13px;
+  line-height: 1.08;
+  text-align: left;
+  color: #767676;
+  position: absolute;
+  bottom: 25px;
+  left: 85px;
+		
+}
+#sub1 > div div img{
+
+    right: 70px;
+    top: 25px;
+  position: absolute;
+}
+#sub2 {
+	background:#eee;
+	padding: 30px;
+}
+#sub2 .wrap {
+	margin: 40px 20%;
+}
+#sub2 > div > h1{
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-text-size-adjust: none;
+    -webkit-border-radius: 0;
+    image-rendering: -webkit-optimize-contrast;
+    font-family: noto,LotteMartDream,dotum,gullim,bm,tm,lhp,roboto,scd,Tahoma,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    line-height: 3em;
+    color: #000;
+} 
+#sub3 {
+	
+}
+#sub3 .wrap {
+	margin: 40px 20%;
+}
+#sub3 > div > div > h1{
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-text-size-adjust: none;
+    -webkit-border-radius: 0;
+    image-rendering: -webkit-optimize-contrast;
+    font-family: noto,LotteMartDream,dotum,gullim,bm,tm,lhp,roboto,scd,Tahoma,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    line-height: 3em;
+    color: #000;
+}   
+.location-wrap {padding: 30px 0;}
+.location-wrap .title {padding-bottom: 35px; text-align: center;}
+.location-wrap .title > * {text-align: center;}
+.location-wrap .title span {font-family: worksans; font-weight: 700; font-size: 15px; line-height: 15px; color: #1f5e45; letter-spacing: 10px;}
+.location-wrap .title h5 {font-size: 30px; line-height: 30px; color: #333; letter-spacing: -1px; margin: 20px 0;}
+.location-wrap .title p {font-size: 16px; line-height: 24px; color: #666; letter-spacing: -0.5px;}
+.location-wrap .wrap {}
+.location-wrap .wrap .tab-list {text-align: left;}
+.location-wrap .wrap .tab-list li {display: inline-block; vertical-align: top; margin: 5px 5px;}
+.location-wrap .wrap .tab-list li a {display: inline-block; width: 218px; line-height: 43px; border: 1px solid #ddd; background: #f8f8f8; box-sizing: border-box; text-align: center; text-decoration: none; font-size: 15px; color: #888; letter-spacing: -1px; border-radius: 5px;}
+.location-wrap .wrap .tab-list li.active a {background: #004496; border-color: #004496; color: #fff;}
+.location-wrap .wrap .tab-cont {position: relative; margin-top: 50px;}
+.location-wrap .wrap .tab-cont .cont {}
+
+.location-wrap .wrap .tab-cont .cont dl {}
+.location-wrap .wrap .tab-cont .cont dl > * {display: inline-block; line-height: 60px;}
+.location-wrap .wrap .tab-cont .cont dl dt {min-width: 80px; padding-left: 40px; font-weight: 300; font-size: 18px; color: #333; letter-spacing: -1px; }
+.location-wrap .wrap .tab-cont .cont dl dd { font-size: 15px; color: #666; }
+ 
+.location-wrap .wrap .tab-cont .teb-text{border: 1px solid #eee;}

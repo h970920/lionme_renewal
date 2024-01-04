@@ -1,0 +1,47 @@
+function get_basic_paging(write_pages, cur_page, total_page, url, add=""){
+	var str = "";
+	if (cur_page > 1) {
+		str += "<a href='" + url + "1' class='first'><i class='fa fa-angle-double-left'></i></a>";
+	}
+
+	//var start_page = ( ( ( (cur_page - 1 ) / write_pages ) ) * write_pages ) + 1;
+	//var end_page = start_page + write_pages - 1;
+	
+	     // 새로 추가된 코드
+     if (cur_page <= Math.floor(write_pages/2)) {
+          start_page = 1;
+          end_page = write_pages;
+     }
+     else {
+          start_page = cur_page - Math.floor(write_pages/2) + 1;
+          if (total_page-start_page < write_pages) {
+               start_page = total_page-write_pages+1;
+               if (start_page<1) start_page = 1;
+          }
+          end_page = cur_page + Math.floor(write_pages/2);
+     }
+
+	if (end_page >= total_page) end_page = total_page;
+
+	if (start_page > 1) str += "<a href='" + url +""+ (start_page-1) + "' class='prev'><i class='fa fa-angle-left'></i></a>";
+
+	if (total_page > 1) {
+				for (var k=start_page; k<=end_page; k++) {
+			if (cur_page != k)
+				str += "<a href='"+url+""+k+"'>"+k+"</a>";
+			else
+				str += "<a href='#' class='active'>"+k+"</a>";
+		}
+	}
+
+	if (total_page > end_page) str += "<a href='" + url+""+ (end_page+1) + "' class='next'><i class='fa fa-angle-right'></i></a>";
+
+	if (cur_page < total_page) {
+		//$str .= "[<a href='$url" . ($cur_page+1) . "'>다음</a>]";
+		str += "<a href='"+url+""+total_page+"' class='last'><i class='fa fa-angle-double-right'></i></a>";
+	}
+	
+	$("#sb-paging").append(str);
+	 
+}
+
